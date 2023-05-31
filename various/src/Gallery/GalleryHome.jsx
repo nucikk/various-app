@@ -21,7 +21,7 @@ const GalleryHome = () => {
   let sculpture = sculptureList[index];
   return (
     <div>
-      <button onClick={handleNextClick}>
+      <button className="next-btn" onClick={handleNextClick}>
         Next
       </button>
       <h2>
@@ -31,28 +31,11 @@ const GalleryHome = () => {
       <h3>
         ({index + 1} of {sculptureList.length})
       </h3>
-      <button onClick={handleMoreClick}>
+      <button className="show-hide-btn" onClick={handleMoreClick}>
         {showMore ? 'Hide' : 'Show'} details
       </button>
-      {showMore && <p>{sculpture.description}</p>}
+      {showMore && <p className="showmore-text">{sculpture.description}</p>}
       <img className="nature-img"
-        src={sculpture.url}
-        alt={sculpture.alt}
-      /><button onClick={handleNextClick}>
-        Next
-      </button>
-      <h2>
-        <i>{sculpture.name} </i>
-        by {sculpture.artist}
-      </h2>
-      <h3>
-        ({index + 1} of {sculptureList.length})
-      </h3>
-      <button onClick={handleMoreClick}>
-        {showMore ? 'Hide' : 'Show'} details
-      </button>
-      {showMore && <p>{sculpture.description}</p>}
-      <img  className="nature-img"
         src={sculpture.url}
         alt={sculpture.alt}
       />

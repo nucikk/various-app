@@ -1,3 +1,32 @@
 .nature-img {
     width: 20%;
+    margin: 20px;
+}
+
+.next-btn, .show-hide-btn, .next-click-btn {
+    width: 10.75rem;
+    height: 2.875rem;
+    border:none;
+    border-radius: 10px;
+    margin: 18px;  
+    background-color: #D4BCA3;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+}
+
+.next-btn:hover {
+    background-color: #d4bca3eb;
+}
+
+.show-hide-btn {
+    background-color: #A3D4BC;
+}
+
+.showmore-text {
+    width: 45rem;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #687888;
+    margin: 20px;
 }
